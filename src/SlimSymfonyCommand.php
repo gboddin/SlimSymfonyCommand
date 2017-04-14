@@ -21,6 +21,14 @@ abstract class  SlimSymfonyCommand extends SymfonyCommand
     {
         return $this->container[$id];
     }
+    
+    /**
+     * @return SlimContainer
+     */
+    protected function getContainer()
+    {
+        return $this->container;
+    }
 
     /**
      * @param SlimContainer   $container
